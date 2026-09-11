@@ -1,0 +1,304 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            display: flex;
+        }
+
+#previewImage {
+  border: 1px solid #888;
+  box-shadow: 0 0.5em 0.3em #888;
+}
+
+#caption.normal {
+  color: green;
+}
+#caption.alarm {
+  color: red;
+}
+
+div.container1 {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: lightgray;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 1px;
+  text-align: center;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+div.container2 {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: lightgray;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 1px;
+  text-align: center;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+div.sub-element-inp-up {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+  width: auto;
+  border: 1px solid gainsboro;
+  padding: 0px;
+  margin: 10px;
+  text-align: topleft;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0.3em #888;
+}
+
+div.sub-element-inp-up.normal {
+   border: 2px solid greenyellow; 
+}
+
+div.sub-element-inp-up.alarm {
+   border: 2px solid red; 
+}
+
+div.sub-element-inp-down {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  background-color: white;
+  width: auto;
+  border: 1px solid gainsboro;
+  padding: 0px;
+  margin: 10px;
+  text-align: topleft;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0.3em #888;
+}
+
+div.sub-element-inp-down.normal {
+   border: 2px solid blue; 
+}
+
+div.sub-element-inp-down.alarm {
+   border: 2px solid red; 
+}
+
+div.sub-element-out-up {
+  position: relative;
+  top: 0%;
+  right: 0%;
+  background-color: white;
+  width: auto;
+  border: 1px solid gainsboro;
+  padding: 0px;
+  margin: 10px;
+  text-align: topleft;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0.3em #888;
+}
+
+div.sub-element-out-up.normal {
+  border: 2px solid blue;   
+}
+
+div.sub-element-out-up.alarm {
+  border: 2px solid red;   
+}
+
+div.sub-element-out-down {
+  position: relative;
+  bottom: 0%;
+  right: 0%;
+  background-color: white;
+  width: auto;
+  border: 1px solid gainsboro;
+  padding: 0px;
+  margin: 10px;
+  text-align: topleft;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0.3em #888;
+}
+
+div.sub-element-out-down.normal {
+  border: 2px solid blue;   
+}
+
+div.sub-element-out-down.alarm {
+  border: 2px solid red;   
+}
+
+div.switch {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+  width: auto;
+  border: 1px solid grey;
+  padding: 12px;
+  margin: 0px;
+  text-align: topleft;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+div.switch.alarm {
+  background-color: lightsalmon;
+}
+
+div.switch.normal {
+  background-color: lightgreen;
+}
+
+div.own {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: auto;
+    width: auto;
+}
+
+.input-button {
+    padding: 10px 8px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.input-button.active {
+    background-color: #4287f5;
+}
+
+.input-button.inactive {
+    background-color: gray;
+}
+
+.service-button {
+    padding: 10px 8px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.service-button.active {
+    background-color: #4287f5;
+}
+
+.service-button.inactive {
+    background-color: gray;
+}
+
+.service-button.stop-active {
+    background-color: red;
+}
+
+.cfgBtn {    
+    padding: 10px 8px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+#inputCanvas {
+    position: absolute;
+    left: 10%;
+    top: -20%;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid green;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#switchCanvas {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid green;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#outputCanvas {
+    position: absolute;
+    right: 10%;
+    top: -20%;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid green;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#dataContainer {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+#dataContainer h2, #dataContainer h3 {
+    color: #333;
+}
+
+#dataContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#dataContainer li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.back-button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 0.5em 0.3em #888;
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+  h1 {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+  h1 {
+    writing-mode: unset;
+    text-orientation: mixed;
+  }
+}

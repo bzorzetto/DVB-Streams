@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sessione X</title>
+  <meta charset="utf-8" />
+  <script src="../base1/cockpit.js" defer></script>
+  <script src="streams.js" defer></script>
+  <link rel="stylesheet" href="streams.css">
+</head>
+<body>
+
+  <h1 id="titolo">Stream X</h1>
+
+  <div id="videoInput" class="container1">
+  <h2>TSP</h2>
+  <p id="timestamp"></p>
+    <div id="videoSwitch" class="switch">
+        <div id="inputOne" class="sub-element-inp-up">
+            <h3>Input (<a id="inp1Plug">..</a>) -> Output (<a id="out1Plug">..</a>)</h3>
+            <button id="input1Cfg" class="cfgBtn">Config</button>
+            <button id="start-service-button-in1" class="service-button">Enable</button>
+            <button id="stop-service-button-in1" class="service-button">Disable</button>
+        </div>
+        <p id="caption"></p>
+    </div>
+    <button id="backBtn" type="button" class="back-button">Back</button>
+  </div>
+
+  <div id="data" class="container2">
+      <h2>Informazioni Transport Stream</h2>
+      <div id="videoPreview" class="video-preview">
+           <img id="previewImage" src="" alt="Anteprima" width="340" height="190">
+      </div>
+
+      <div id="dataContainer">
+           <div id="serviceInfo">
+               <h3>Servizi Disponibili</h3>
+               <ul></ul>
+           </div>
+           <div id="tsInfo">
+               <h3>Statistiche del Flusso TS</h3>
+               <ul></ul>
+           </div>
+           <div id="pidInfo">
+               <h3>Elenco PIDs</h3>
+               <ul></ul>
+           </div>
+      </div>
+  </div>
+</body>
+</html>

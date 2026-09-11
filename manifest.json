@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "menu": {
+        "DVB-Streams": {
+            "label": "DVB-Streams",
+            "path": "index.html"
+        }
+    }
+}

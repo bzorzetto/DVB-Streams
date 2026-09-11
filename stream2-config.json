@@ -1,0 +1,34 @@
+{
+    "inputPlugin": {
+        "type": "srt",
+        "parameters": {
+            "passphrase": "mediaroute",
+            "caller": "",
+            "listener": "true",
+            "ipAddress": "192.168.128.19",
+            "port": "6006"
+        },
+        "isDisabled": false
+    },
+    "outputPlugin": {
+        "type": "ip",
+        "parameters": {
+            "ttl": "10",
+            "rtp": "",
+            "packet-burst": "7",
+            "enforce-burst": "true",
+            "local-address": "",
+            "outputIpAddress": "192.168.128.16",
+            "outputPort": "10001"
+        },
+        "isDisabled": false
+    },
+    "monitorPlugin": {
+        "type": "bitrate_monitor",
+        "parameters": {
+            "min": "1000000",
+            "max": "3000000"
+        },
+        "isDisabled": false
+    }
+}

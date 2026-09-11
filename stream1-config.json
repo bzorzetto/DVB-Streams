@@ -1,0 +1,35 @@
+{
+    "inputPlugin": {
+        "type": "dvb",
+        "parameters": {
+            "adapter": "0",
+            "delivery-system": "DVB-T",
+            "frequency": "642000000",
+            "P zap": "true",
+            "service": "48"
+        },
+        "isDisabled": false
+    },
+    "outputPlugin": {
+        "type": "ip",
+        "parameters": {
+            "ttl": "32",
+            "rtp": "true",
+            "packet-burst": "7",
+            "enforce-burst": "true",
+            "local-address": "",
+            "outputIpAddress": "eu-south1.srt.msmdn.net",
+            "outputPort": "30265"
+        },
+        "isDisabled": false
+    },
+    "monitorPlugin": {
+        "type": "bitrate_monitor",
+        "parameters": {
+            "min": "1000000",
+            "max": "3000000",
+            "atStartup": ""
+        },
+        "isDisabled": false
+    }
+}

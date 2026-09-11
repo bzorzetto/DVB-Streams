@@ -1,0 +1,32 @@
+{
+    "inputPlugin": {
+        "type": "ip",
+        "parameters": {
+            "local-address": "",
+            "ipAddress": "239.16.16.3",
+            "port": "10000"
+        },
+        "isDisabled": false
+    },
+    "outputPlugin": {
+        "type": "ip",
+        "parameters": {
+            "ttl": "10",
+            "rtp": "true",
+            "packet-burst": "7",
+            "enforce-burst": "true",
+            "local-address": "",
+            "outputIpAddress": "192.168.128.16",
+            "outputPort": "10002"
+        },
+        "isDisabled": false
+    },
+    "monitorPlugin": {
+        "type": "bitrate_monitor",
+        "parameters": {
+            "min": "100000",
+            "max": "3000000"
+        },
+        "isDisabled": false
+    }
+}

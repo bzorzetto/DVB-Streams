@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurazione TSP - TSDuck</title>
+    <script src="../base1/cockpit.js"></script>
+    <script src="config-io.js"></script>
+    <link rel="stylesheet" href="config-io.css">
+</head>
+<body>
+
+    <h1 id="titolo">TSP</h1>
+
+    <div class="form-section">
+        <h2>Parametri di Configurazione</h2>
+        <form id="configForm">
+      <div id="inputDiv" class="input">
+            <h2><label for="inputPlugin">Plugin di Ingresso</label></h2>
+            <select id="inputPlugin" name="inputPlugin"></select>
+            <div id="inputPluginFields" class="input"></div>
+      </div>
+      <div id="outputDiv" class="output">
+            <h2><label for="outputPlugin">Plugin di Uscita</label></h2>
+            <select id="outputPlugin" name="outputPlugin"></select>
+            <div id="outputPluginFields" class="output"></div>
+      </div>
+      <div id="monitorDiv" class="monitor">
+            <h2><label for="outputPlugin">Parametri di Monitoraggio</label></h2>
+            <select id="monitorPlugin" name="monitorPlugin">
+                <option value="bitrate_monitor">BITRATE MONITOR</option>
+            </select>
+
+            <div id="monitorPluginFields" class="monitor"></div>
+      </div>
+
+            <button id="generateConfigBtn" type="button">Genera Configurazione</button>
+            <button id="backBtn" type="button">Back</button>
+        </form>
+    </div>
+
+    <div class="form-section">
+        <h2>File di Configurazione Systemd</h2>
+        <pre id="systemdOutput"># Il file generato apparirà qui</pre>
+    </div>
+</body>
+</html>

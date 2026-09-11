@@ -1,0 +1,24 @@
+{
+    "inputPlugin": {
+        "type": "dvb",
+        "parameters": {
+            "filePath": ""
+        },
+        "isDisabled": false
+    },
+    "outputPlugin": {
+        "type": "ip",
+        "parameters": {
+            "outputFilePath": ""
+        },
+        "isDisabled": false
+    },
+    "monitorPlugin": {
+        "type": "bitrate_monitor",
+        "parameters": {
+            "min": "",
+            "max": ""
+        },
+        "isDisabled": false
+    }
+}
